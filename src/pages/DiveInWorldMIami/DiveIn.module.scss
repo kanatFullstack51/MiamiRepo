@@ -1,0 +1,73 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_global.scss";
+@import "@/styles/_templates.scss";
+
+.wrapper{
+    margin-top: 10%;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+.miamiBlock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    > .content{
+        margin-top: 3%;
+        width:533px ;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.questions{
+    margin-top: 10% !important;
+    text-align: center;
+    width: 1200px;
+    height: 480px;
+    background-color: #CBACA0;
+   margin: 0 auto;
+   border-radius: 10px;
+}
+.map{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 5%;
+}
+.footer{
+    height:403px ;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.advantages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    p{
+        color: black;
+        font-size:16px;
+    }
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+.innerWrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 7% 3%;
+}
+.question{
+    display: flex;
+    margin-top: 6%;
+    flex-direction:column ;
+    line-height: 60px;
+    font-size: 38px;
+}
+.form{
+    width: 30%;
+}

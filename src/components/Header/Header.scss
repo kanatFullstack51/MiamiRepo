@@ -1,0 +1,55 @@
+@import "../../styles/_variables";
+@import "@/styles/_templates";
+
+.header__top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  &_logo {
+    > img {
+    }
+  }
+  > img {
+    margin-left: 147px;
+    z-index: 1;
+  }
+
+  &_nav {
+    max-width: 736px;
+    height: 80px;
+    padding: 24px 72px;
+    // margin-top: -2vh;
+    // margin-right: -10vw;
+
+    &_list {
+      display: flex;
+      gap: 40px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+
+      > a {
+        color: black;
+        padding: 0;
+        display: inline-block;
+        position: relative;
+      }
+      > a:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $brown;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      > a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
+}

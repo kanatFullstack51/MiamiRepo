@@ -1,0 +1,25 @@
+@import "./variables";
+
+%tplblur {
+  background: $bg-gradient;
+  backdrop-filter: $bg-filter;
+  backdrop-filter: blur(15px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 15px;
+}
+
+%title {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+%text {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+%text2 {
+  font-size: 16px;
+  line-height: 20px;
+}

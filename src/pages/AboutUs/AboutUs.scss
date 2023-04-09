@@ -1,0 +1,75 @@
+@import "@/styles/_global.scss";
+@import "@/styles/_variables.scss";
+@import "@/styles/_templates.scss";
+
+.about {
+  background-color: $pink;
+  padding-top: 191px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    > img {
+    }
+    > h1 {
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      color: $brown;
+    }
+  }
+  &__info {
+    &_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 48px 118px 126px 117px;
+      @extend %tplblur;
+      min-height: 398px;
+      max-width: 100%;
+      position: relative;
+
+      &:before {
+        content: url("../../assets/images/ellipse-brown.png");
+        position: absolute;
+        bottom: -20%;
+        left: -8%;
+      }
+
+      &:after {
+        content: url("../../assets/images/ellipse-orange.png");
+        position: absolute;
+        top: -30%;
+        right: -2%;
+      }
+
+      > p:first-child {
+        max-width: 818px;
+      }
+      > p {
+        max-width: 1042px;
+        font-size: 24px;
+        line-height: 32px;
+      }
+      > span {
+        align-self: end;
+        font-family: "Rochester";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 72px;
+        color: $brown;
+      }
+    }
+  }
+}
